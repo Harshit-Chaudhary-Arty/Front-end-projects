@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: "Hubot Sans", sans-serif;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(237, 237, 237);
+    display: grid;
+    grid-template-columns: 25% 30% 44%;
+    grid-template-rows: 23% 58% 17%;
+    padding: 6vh 3vw;
+}
+
+.elem{
+    /* background-color: aqua; */
+    /* border:2px solid black; */
+}
+
+#ltl{
+    grid-column: 1 / 2;
+    /* background-color: red; */
+
+}
+
+#ltl img{
+    width: 20%;
+    height: 50%;
+    object-fit: fill;
+}
+
+#lr{
+    grid-column: 3/ 4;
+    grid-row: 1/4;
+    justify-self: flex-end;
+    /* background-color: lavender; */
+}
+
+#lc{
+    grid-column: 1 / 3;
+    /* background-color: purple; */
+    font-size: 3.1vw;
+    line-height: 0.9;
+}
+
+#lc h1{
+    font-weight: 400;
+    letter-spacing: 0vw;
+    color: rgb(24, 24, 24)
+
+
+}
+
+
+#lc h1 sub{
+    font-size: 2vw;
+    color: rgb(54, 54, 54);
+}
+
+#lc h1:nth-child(2n){
+    text-align: right;
+}
+
+
+#ltr{
+    grid-column: 2 / 3;
+    grid-row: 1;
+    /* background-color: green; */
+    overflow: hidden;
+    /* text-align: right; */
+    /* padding-right: 18%; */
+    padding-top: 10%;
+    color: rgb(83, 83, 83);
+}
+
+#ltr p{
+    text-align: right;
+}
+
+
+#lr video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* margin-left: 10%; */
+    border-radius: 5px;
+}
+
+#lb{
+    grid-column: 1 / 3;
+    padding-top:6%;
+    color: rgb(83, 83, 83);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#lb p{
+    width: 72%;
+    display: inline-block;
+}
+
+
+#lb .circlebutton{
+    display: inline-block;
+    background-color: orangered;
+    height: 4rem;
+    width:4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 200%;
+}
